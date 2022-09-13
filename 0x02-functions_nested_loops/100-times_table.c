@@ -2,7 +2,7 @@
 
 /**
  * print_times_table - prints times table from numbers 0-14
- * @m: input integer
+ * @n: integer
  * Return: nothing
  */
 
