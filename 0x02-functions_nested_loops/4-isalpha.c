@@ -1,8 +1,8 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _isalpha -check main
- * @: An input character
+ *@c: An input character
  *
  * Return: 1 or 0
  */
