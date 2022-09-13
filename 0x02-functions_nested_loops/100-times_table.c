@@ -2,20 +2,20 @@
 
 /**
  * print_times_table - prints times table from numbers 0-14
- * @n: input integer
+ * @m: input integer
  * Return: nothing
  */
 
-void print_times_table(int n)
+void print_times_table(int m)
 {
 	int i, j;
 
-	if (n > 0 && n < 15)
+	if (m > 0 && m < 15)
 	{
-		for (i = 0; i <= n; i++)
+		for (i = 0; i <= m; i++)
 		{
 			_putchar('0');
-			for (j = 1; j <= n; j++)
+			for (j = 1; j <= m; j++)
 				putformat(i * j);
 			_putchar('\n');
 		}
@@ -37,7 +37,7 @@ void putformat(int n)
 		_putchar(' ');
 		_putchar(n + '0');
 	}
-	else if (n > 9 && n <= 99)
+	else if (n > 9&&n <= 99)
 	{
 		_putchar(',');
 		_putchar(' ');
