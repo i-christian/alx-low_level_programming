@@ -2,7 +2,7 @@
 
 /**
  * largest_number - returns the largest of 3 numbers
- * @a: first integer parameter 
+ * @a: first integer parameter
  * @b: second integer parameter
  * @c: third integer parameter
  * Return: largest number parameter
