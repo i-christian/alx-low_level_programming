@@ -21,7 +21,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	newNode->n = n;
 
 	/*set the next pointer of the current last node to point at the*/
-	 /* ew node, and the newNode's next to NULL*/
+	 /* new node, and the newNode's next to NULL*/
 	newNode->next = NULL;
 	if (*head == NULL)
 		*head = newNode;
@@ -36,6 +36,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		final->next = newNode;
 	}
 
-	return (final);
+	return (*head);
 
 }
