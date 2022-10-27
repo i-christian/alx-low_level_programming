@@ -12,23 +12,26 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num = 0, mult = 1;
+	unsigned int number = 0, base = 1;
 	int len;
 
-	if (b == NULL)
+	/*check if the string is empty*/
+	if (*b == '\0')
 		return (0);
 
+	/*check the length of the string*/
 	for (len = 0; b[len];)
 		len++;
 
+	/*convert binary number to a decimal number*/
 	for (len -= 1; len >= 0; len--)
 	{
 		if (b[len] != '0' && b[len] != '1')
 			return (0);
 
-		num += (b[len] - '0') * mult;
-		mult *= 2;
+		number += (b[len] - '0') * base;
+		base *= 2;
 	}
 
-	return (num);
+	return (number);
 }
