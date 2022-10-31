@@ -13,12 +13,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t o, r, w;
 	char *buffer;
-  
-  /*check if their is a file present&*/
+
+	/*check if their is a file present&*/
 	if (filename == NULL)
 		return (0);
-  
-  /*allocate memory for the buffer*/
+
+	/*allocate memory for the buffer*/
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
@@ -32,8 +32,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-  
-  /*free the heap allocated space*/
+
+	/*free the heap allocated space*/
 	free(buffer);
 	close(o);
 
