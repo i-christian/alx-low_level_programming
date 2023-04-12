@@ -1,10 +1,6 @@
 #ifndef SEARCH_ALGOS_H
 #define SEARCH_ALGOS_H
 
-/**
- * File: search_algos.h
- * Description: Contains function headers used by functions in this project
- */
 #include <stdio.h>
 #include <stdlib.h>
 
