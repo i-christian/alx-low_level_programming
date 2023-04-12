@@ -11,16 +11,16 @@
 int binary_search(int *array, size_t size, int value)
 {
 	size_t pos = -1;
-	int BEG = array[0];
+	int BEG = 0;
 	int i = 0;
-	int END = array[size - 1];
+	int END = size - 1;
 
 	if (array == NULL)
 	{
 		return (pos);
 	}
 
-	while (BEG < END)
+	while (BEG <= END)
 	{
 		int MID = (BEG + END) / 2;
 
