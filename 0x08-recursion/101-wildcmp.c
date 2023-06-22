@@ -1,8 +1,3 @@
-/*
- * File: 100-wildcmp.c
- * Auth: Brennan D Baraban
- */
-
 #include "main.h"
 
 int strlen_no_wilds(char *str);
